@@ -13,7 +13,7 @@ gdown https://drive.google.com/uc?id=1m7tMpE9qEcQGQjL_BdMD-Mvgmc44hG1Y -O Task10
 NAMES=(Liver HepaticVessel Pancreas Colon Lung Spleen)
 TASK_IDS=('03' '08' '07' '10' '06' '09')
 
-for i in {0..5}
+for i in {0..6}
   do
 	echo ${NAMES[${i}]}
 
@@ -41,3 +41,4 @@ python3 -m starter_code.get_imaging
 mv data/* ../1Kidney/origin
 cd ..
 yes | rm -r kits19
+
